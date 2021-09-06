@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    >
+
+    <Button
+        android:id="@+id/dialog_ok"
+        android:layout_width="145dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btncancel"
+        android:text="OK"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:backgroundTint="@color/none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toEndOf="@+id/dialog_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/txtquestion" />
+
+    <TextView
+        android:id="@+id/txtquestion"
+        android:layout_width="300dp"
+        android:layout_height="67dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Are you sure about that?"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="16dp"        />
+
+    <Button
+        android:id="@+id/dialog_cancel"
+        android:layout_width="145dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btncancel"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:backgroundTint="@color/none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtquestion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
